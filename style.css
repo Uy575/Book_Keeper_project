@@ -1,0 +1,155 @@
+:root{
+    --background-color :  rgb(161, 106, 161);
+    --border-radius:5px;
+    --text-color: white;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    /* background-color: lightcoral;
+    color: var(--text-color);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 52 52'%3E%3Cpath fill='%23f4f2f7' fill-opacity='0.27' d='M0 17.83V0h17.83a3 3 0 0 1-5.66 2H5.9A5 5 0 0 1 2 5.9v6.27a3 3 0 0 1-2 5.66zm0 18.34a3 3 0 0 1 2 5.66v6.27A5 5 0 0 1 5.9 52h6.27a3 3 0 0 1 5.66 0H0V36.17zM36.17 52a3 3 0 0 1 5.66 0h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 0 1 0-5.66V52H36.17zM0 31.93v-9.78a5 5 0 0 1 3.8.72l4.43-4.43a3 3 0 1 1 1.42 1.41L5.2 24.28a5 5 0 0 1 0 5.52l4.44 4.43a3 3 0 1 1-1.42 1.42L3.8 31.2a5 5 0 0 1-3.8.72zm52-14.1a3 3 0 0 1 0-5.66V5.9A5 5 0 0 1 48.1 2h-6.27a3 3 0 0 1-5.66-2H52v17.83zm0 14.1a4.97 4.97 0 0 1-1.72-.72l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1 0-5.52l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43c.53-.35 1.12-.6 1.72-.72v9.78zM22.15 0h9.78a5 5 0 0 1-.72 3.8l4.44 4.43a3 3 0 1 1-1.42 1.42L29.8 5.2a5 5 0 0 1-5.52 0l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1-.72-3.8zm0 52c.13-.6.37-1.19.72-1.72l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43a5 5 0 0 1 5.52 0l4.43-4.43a3 3 0 1 1 1.42 1.41l-4.44 4.43c.36.53.6 1.12.72 1.72h-9.78zm9.75-24a5 5 0 0 1-3.9 3.9v6.27a3 3 0 1 1-2 0V31.9a5 5 0 0 1-3.9-3.9h-6.27a3 3 0 1 1 0-2h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 1 1 2 0v6.27a5 5 0 0 1 3.9 3.9h6.27a3 3 0 1 1 0 2H31.9z'%3E%3C/path%3E%3C/svg%3E"); */
+  background: #659999;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom,#659999,#a35d2a);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom,#659999,#a35d2a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     /* background-repeat: no-repeat; */
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    width: 20rem;
+    height: 4rem;
+    margin: 0px auto 2rem;
+    border-radius: var(--border-radius);
+   user-select: none;
+    opacity: 0.8;
+    color:skyblue;
+
+    
+}
+h1:hover{
+    opacity: 1;
+}
+.itemContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:10px;
+}
+
+.itemName{
+
+    background-color: var(--background-color);
+    width: 20rem;
+    height: 4rem;
+    border-radius: var(--border-radius);
+    position: relative;
+    opacity: 0.8;
+    
+}
+.itemName:hover{
+    opacity: 1;
+}
+img{
+    margin-right: 0.6rem;
+}
+.up{
+
+    position: absolute;
+    right: 6px;
+    top: 3px;
+}
+
+a{
+
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    
+}
+a:hover{
+   text-decoration:underline;
+
+
+}
+.itemName img{
+    vertical-align: sub;
+    margin-top: 1.5rem; 
+     margin-left: 1rem;
+}
+.modalContainer{
+    /* display: none; */
+    background-color: rgba(0,0,0,0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+.show{
+    display: flex;
+}
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 90%;
+    width: 500px;
+    margin: 0 auto;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.modalContent{
+   background-color: grey;
+   text-align: center; 
+   padding: 2rem;
+}
+.header{
+    background-color: var(--background-color);
+    width: 423px;
+    text-align: center;
+    position: relative;
+    max-width: 100%;
+}
+input{
+    width: 90%;
+    margin-top: 1rem;
+    outline: none;
+}
+
+button{
+    width: 8rem;
+    height: 2rem;
+    margin-top: 1rem;
+    border-radius: var(--border-radius);
+    outline: none;
+    border: none;
+    user-select: none;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.3);
+    background-color: var(--background-color);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+button:active{
+    transform: scale(0.95);
+    box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.3);
+}
+.down{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+i{
+    color: skyblue;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://s2.googleusercontent.com/s2/favicons?domain=www.google.com"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <script src="./script.js" defer></script>
+    <title>BookMark</title>
+  </head>
+  <body>
+    <h1 id="modalHandler">Add Bookmark</h1>
+    <div class="itemContainer" id="itemContainer">
+    </div>
+
+    <div class="modalContainer" id="modalContainer">
+      <div class="modal" id="modal">
+        <div class="header">
+          <i class="fas fa-xmark down" id="xmark"> </i>
+          <h3>Add Bookmark</h3>
+        </div>
+        <div class="modalContent" id="modalContent">
+          <form id ="bookmarkId">
+            <div class="formLableAndField" id="formLableAndField">
+              <label for="websiteName">Enter Website Name</label>
+              <input type="text" id="websiteName" />
+            </div>
+            <div class="formLAbelAndField">
+              <label for="websiteUrl">Enter Website Url</label>
+              <input type="text" id="websiteUrl" />
+            </div>
+            <button id="submit">Add</button>
+          </form>
+        </div>
+      </div>
+  </body>
+</html>
